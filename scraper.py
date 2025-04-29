@@ -16,11 +16,13 @@ SUPPLIER_SOURCES = [
 def scrape_supplier_updates():
     all_products = []
     os.makedirs('data', exist_ok=True)
+
     for source in SUPPLIER_SOURCES:
         try:
             response = requests.get(source['url'], timeout=10)
             response.raise_for_status()
             soup = BeautifulSoup(response.text, 'html.parser')
+
             for item in soup.select(source['product_selector']):
                 name_elem = item.select_one(source['name_selector'])
                 price_elem = item.select_one(source['price_selector'])
@@ -31,7 +33,7 @@ def scrape_supplier_updates():
                         'price': price_elem.get_text(strip=True),
                         'scraped_at': datetime.datetime.utcnow().isoformat()
                     })
-        except requests.RequestException:
+        except Exception:
             continue
 
     if all_products:
@@ -39,21 +41,20 @@ def scrape_supplier_updates():
             json.dump(all_products, f, indent=2)
         df = pd.DataFrame(all_products)
         df.to_csv('data/supplier_updates.csv', index=False)
-        # Update backup file
         with open('data/supplier_updates_backup.json', 'w') as f:
             json.dump(all_products, f, indent=2)
+        print("[DUKASMART SCRAPER] Live scrape successful ✅")
     else:
-        # Fallback
         if os.path.exists('data/supplier_updates_backup.json'):
             with open('data/supplier_updates_backup.json', 'r') as f:
                 backup_data = json.load(f)
             with open('data/supplier_updates.json', 'w') as f:
                 json.dump(backup_data, f, indent=2)
+
             df = pd.DataFrame(backup_data)
             df.to_csv('data/supplier_updates.csv', index=False)
-            print("[DUKASMART SCRAPER] Live scrape failed — loading backup supplier data.")
 
-    return all_products
+            print("[DUKASMART SCRAPER] Live scrape failed. Using backup supplier data ✅")
 
 def get_supplier_data():
     if os.path.exists('data/supplier_updates.json'):
