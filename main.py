@@ -36,3 +36,16 @@ async def view_dashboard(request: Request, api_key: str):
         return JSONResponse(content={"error": "Unauthorized"}, status_code=401)
     data = get_supplier_data()
     return templates.TemplateResponse("dashboard.html", {"request": request, "data": data})
+    import json
+import os
+
+@app.get("/amis_market_updates.json")
+async def amis_market_updates_json(api_key: str):
+    if api_key != API_KEY:
+        return JSONResponse(content={"error": "Unauthorized"}, status_code=401)
+    try:
+        with open("data/amis_market_updates.json", "r") as f:
+            data = json.load(f)
+    except FileNotFoundError:
+        data = []
+    return JSONResponse(content=data)
