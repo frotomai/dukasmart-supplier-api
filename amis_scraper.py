@@ -17,14 +17,20 @@ def scrape_amis_market_prices():
     amis_data = []
 
     try:
+        print("[AMIS SCRAPER] Sending request to AMIS...")
         response = requests.get(AMIS_URL, headers=HEADERS, timeout=10)
         response.raise_for_status()
+        print("[AMIS SCRAPER] Response received.")
+
         soup = BeautifulSoup(response.text, 'html.parser')
 
         tables = soup.find_all('table')
+        print(f"[AMIS SCRAPER] Found {len(tables)} tables.")
+
         for table in tables:
             headers = [header.get_text(strip=True) for header in table.find_all('th')]
             if 'Commodity' in headers and 'Market' in headers:
+                print("[AMIS SCRAPER] Target table found.")
                 for row in table.find_all('tr')[1:]:
                     cells = row.find_all('td')
                     if len(cells) >= 4:
@@ -37,16 +43,15 @@ def scrape_amis_market_prices():
                         })
 
         if amis_data:
+            print(f"[AMIS SCRAPER] Scraped {len(amis_data)} records ✅")
             with open('data/amis_market_updates.json', 'w') as f:
                 json.dump(amis_data, f, indent=2)
-            df = pd.DataFrame(amis_data)
-            df.to_csv('data/amis_market_updates.csv', index=False)
-            print(f"[AMIS SCRAPER] Scraped {len(amis_data)} entries from AMIS ✅")
         else:
-            print("[AMIS SCRAPER] No valid market data found ❗")
+            print("[AMIS SCRAPER] No data found ❗")
+
     except Exception as e:
-        print(f"[AMIS SCRAPER] Error scraping AMIS: {e}")
-    
+        print(f"[AMIS SCRAPER] ERROR: {e}")
+
 
 
 
