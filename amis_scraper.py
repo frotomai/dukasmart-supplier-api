@@ -28,19 +28,22 @@ def scrape_amis_market_prices():
         print(f"[AMIS SCRAPER] Found {len(tables)} tables.")
 
         for table in tables:
-            headers = [header.get_text(strip=True) for header in table.find_all('th')]
-            if 'Commodity' in headers and 'Market' in headers:
-                print("[AMIS SCRAPER] Target table found.")
-                for row in table.find_all('tr')[1:]:
-                    cells = row.find_all('td')
-                    if len(cells) >= 4:
-                        amis_data.append({
-                            'commodity': cells[0].get_text(strip=True),
-                            'unit': cells[1].get_text(strip=True),
-                            'market': cells[2].get_text(strip=True),
-                            'price_kes': cells[3].get_text(strip=True),
-                            'scraped_at': datetime.datetime.utcnow().isoformat()
-                        })
+    headers = [header.get_text(strip=True) for header in table.find_all('th')]
+    print("[AMIS DEBUG] HEADERS FOUND:", headers)  # 👈 see what headers are there
+
+    for row in table.find_all('tr'):
+        cells = row.find_all('td')
+        print("[AMIS DEBUG] ROW CELLS:", [cell.get_text(strip=True) for cell in cells])  # 👈 log each row
+
+        if len(cells) >= 4:
+            amis_data.append({
+                'commodity': cells[0].get_text(strip=True),
+                'unit': cells[1].get_text(strip=True),
+                'market': cells[2].get_text(strip=True),
+                'price_kes': cells[3].get_text(strip=True),
+                'scraped_at': datetime.datetime.utcnow().isoformat()
+            })
+
 
         if amis_data:
             print(f"[AMIS SCRAPER] Scraped {len(amis_data)} records ✅")
