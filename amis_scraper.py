@@ -5,17 +5,19 @@ import pandas as pd
 import datetime
 import os
 import json
-import schedule
-import time
 
 AMIS_URL = 'https://amis.co.ke/index.php/site/market'
+
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0 Safari/537.36"
+}
 
 def scrape_amis_market_prices():
     os.makedirs('data', exist_ok=True)
     amis_data = []
 
     try:
-        response = requests.get(AMIS_URL, timeout=10)
+        response = requests.get(AMIS_URL, headers=HEADERS, timeout=10)
         response.raise_for_status()
         soup = BeautifulSoup(response.text, 'html.parser')
 
@@ -44,16 +46,3 @@ def scrape_amis_market_prices():
             print("[AMIS SCRAPER] No valid market data found ❗")
     except Exception as e:
         print(f"[AMIS SCRAPER] Error scraping AMIS: {e}")
-
-# Function to schedule scraping every 24 hours
-def schedule_amis_scraping():
-    schedule.every(24).hours.do(scrape_amis_market_prices)
-    print("[AMIS SCRAPER] Scheduled to scrape every 24 hours.")
-
-    while True:
-        schedule.run_pending()
-        time.sleep(60)
-
-if __name__ == '__main__':
-    scrape_amis_market_prices()
-    schedule_amis_scraping()
