@@ -39,6 +39,20 @@ def scrape_supplier_updates():
             json.dump(all_products, f, indent=2)
         df = pd.DataFrame(all_products)
         df.to_csv('data/supplier_updates.csv', index=False)
+        # Update backup file
+        with open('data/supplier_updates_backup.json', 'w') as f:
+            json.dump(all_products, f, indent=2)
+    else:
+        # Fallback
+        if os.path.exists('data/supplier_updates_backup.json'):
+            with open('data/supplier_updates_backup.json', 'r') as f:
+                backup_data = json.load(f)
+            with open('data/supplier_updates.json', 'w') as f:
+                json.dump(backup_data, f, indent=2)
+            df = pd.DataFrame(backup_data)
+            df.to_csv('data/supplier_updates.csv', index=False)
+            print("[DUKASMART SCRAPER] Live scrape failed — loading backup supplier data.")
+
     return all_products
 
 def get_supplier_data():
