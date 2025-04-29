@@ -1,0 +1,12 @@
+from fastapi import FastAPI, Request
+from fastapi.templating import Jinja2Templates
+from fastapi.responses import JSONResponse, StreamingResponse, HTMLResponse
+
+templates = Jinja2Templates(directory="templates")
+
+@app.get("/dashboard", response_class=HTMLResponse)
+async def view_dashboard(request: Request, api_key: str):
+    if api_key != API_KEY:
+        return JSONResponse(content={"error": "Unauthorized"}, status_code=401)
+    data = get_supplier_data()
+    return templates.TemplateResponse("dashboard.html", {"request": request, "data": data})
