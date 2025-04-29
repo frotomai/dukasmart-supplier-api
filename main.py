@@ -55,3 +55,13 @@ async def amis_market_updates(api_key: str):
         data = []
 
     return JSONResponse(content=data)
+@app.get("/run_amis_scraper")
+async def run_amis_scraper(api_key: str):
+    if api_key != API_KEY:
+        return JSONResponse(content={"error": "Unauthorized"}, status_code=401)
+    try:
+        from amis_scraper import scrape_amis_market_prices
+        scrape_amis_market_prices()
+        return JSONResponse(content={"status": "AMIS scraper ran successfully ✅"})
+    except Exception as e:
+        return JSONResponse(content={"error": str(e)}, status_code=500)
