@@ -46,8 +46,7 @@ def scrape_amis_market_prices():
             print("[AMIS SCRAPER] No valid market data found ❗")
     except Exception as e:
         print(f"[AMIS SCRAPER] Error scraping AMIS: {e}")
-    if __name__ == "__main__":
-    scrape_amis_market_prices()
+    
 
 
 
