@@ -1,10 +1,13 @@
+
 from fastapi import FastAPI, Request
 from fastapi.templating import Jinja2Templates
 from fastapi.responses import JSONResponse, StreamingResponse, HTMLResponse
 from scraper import get_supplier_data
-from amis_scraper import get_amis_data
+from amis_scraper import scrape_amis_market_prices
 import pandas as pd
 import io
+import json
+import os
 
 app = FastAPI()
 API_KEY = "dukasmart1234"
@@ -42,19 +45,13 @@ async def view_dashboard(request: Request, api_key: str):
 async def amis_market_updates(api_key: str):
     if api_key != API_KEY:
         return JSONResponse(content={"error": "Unauthorized"}, status_code=401)
-    data = get_amis_data()
-    if not data:
-        return JSONResponse(content={"error": "No AMIS data available"}, status_code=404)
-    return JSONResponse(content=data)
-from amis_scraper import scrape_amis_market_prices  # Make sure this import is already present
 
-@app.get("/run_amis_scraper")
-async def run_amis_scraper(api_key: str):
-    if api_key != API_KEY:
-        return JSONResponse(content={"error": "Unauthorized"}, status_code=401)
-    
+    scrape_amis_market_prices()
+
     try:
-        scrape_amis_market_prices()
-        return JSONResponse(content={"message": "AMIS scrape completed ✅"})
-    except Exception as e:
-        return JSONResponse(content={"error": str(e)}, status_code=500)
+        with open("data/amis_market_updates.json", "r") as f:
+            data = json.load(f)
+    except FileNotFoundError:
+        data = []
+
+    return JSONResponse(content=data)
