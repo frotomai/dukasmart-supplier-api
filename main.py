@@ -1,12 +1,9 @@
-
 from fastapi import FastAPI, Request
 from fastapi.templating import Jinja2Templates
-from fastapi.responses import HTMLResponse, JSONResponse, StreamingResponse
+from fastapi.responses import JSONResponse, StreamingResponse, HTMLResponse
 from scraper import get_supplier_data
-from amis_scraper import get_amis_data
 import pandas as pd
 import io
-import os
 
 app = FastAPI()
 API_KEY = "dukasmart1234"
@@ -29,35 +26,8 @@ async def supplier_updates_csv(api_key: str):
     df = pd.DataFrame(data)
     stream = io.StringIO()
     df.to_csv(stream, index=False)
-    response = StreamingResponse(
-        iter([stream.getvalue()]),
-        media_type="text/csv"
-    )
+    response = StreamingResponse(iter([stream.getvalue()]), media_type="text/csv")
     response.headers["Content-Disposition"] = "attachment; filename=supplier_updates.csv"
-    return response
-
-@app.get("/amis_market_updates.json")
-async def amis_market_updates_json(api_key: str):
-    if api_key != API_KEY:
-        return JSONResponse(content={"error": "Unauthorized"}, status_code=401)
-    data = get_amis_data()
-    return JSONResponse(content=data)
-
-@app.get("/amis_market_updates.csv")
-async def amis_market_updates_csv(api_key: str):
-    if api_key != API_KEY:
-        return JSONResponse(content={"error": "Unauthorized"}, status_code=401)
-    data = get_amis_data()
-    if not data:
-        return JSONResponse(content={"error": "No AMIS market data available"}, status_code=404)
-    df = pd.DataFrame(data)
-    stream = io.StringIO()
-    df.to_csv(stream, index=False)
-    response = StreamingResponse(
-        iter([stream.getvalue()]),
-        media_type="text/csv"
-    )
-    response.headers["Content-Disposition"] = "attachment; filename=amis_market_updates.csv"
     return response
 
 @app.get("/dashboard", response_class=HTMLResponse)
