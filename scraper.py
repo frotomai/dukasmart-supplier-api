@@ -57,7 +57,20 @@ def scrape_supplier_updates():
             print("[DUKASMART SCRAPER] Live scrape failed. Using backup supplier data ✅")
 
 def get_supplier_data():
-    if os.path.exists('data/supplier_updates.json'):
+    try:
+        # Try to load live scraped data
         with open('data/supplier_updates.json', 'r') as f:
+            data = json.load(f)
+        if data:
+            return data
+    except Exception:
+        pass
+
+    # If live data fails or is empty, load from backup
+    try:
+        with open('data/supplier_updates_backup.json', 'r') as f:
             return json.load(f)
-    return []
+    except Exception:
+        print("[DUKASMART SCRAPER] No data available.")
+        return []
+
