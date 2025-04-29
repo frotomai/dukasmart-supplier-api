@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DukaSmart Dashboard</title>
+</head>
+<body>
+    <h1>Supplier Dashboard</h1>
+    <ul>
+        {% for item in data %}
+            <li>{{ item.name }} - {{ item.price }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
