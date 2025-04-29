@@ -1,0 +1,602 @@
+[
+  {
+    "supplier": "Naivas Kenya",
+    "name": "Pineapple Whole",
+    "price": "KES 1838",
+    "scraped_at": "2025-04-29T01:46:44.658425"
+  },
+  {
+    "supplier": "Carrefour Kenya",
+    "name": "Sugar 1kg",
+    "price": "KES 1886",
+    "scraped_at": "2025-04-29T01:46:44.658437"
+  },
+  {
+    "supplier": "Naivas Kenya",
+    "name": "Toothpaste 150ml",
+    "price": "KES 335",
+    "scraped_at": "2025-04-29T01:46:44.658441"
+  },
+  {
+    "supplier": "Carrefour Kenya",
+    "name": "Hand Sanitizer 500ml",
+    "price": "KES 421",
+    "scraped_at": "2025-04-29T01:46:44.658444"
+  },
+  {
+    "supplier": "Chandarana Foodplus",
+    "name": "Farm Fresh Eggs Tray",
+    "price": "KES 1362",
+    "scraped_at": "2025-04-29T01:46:44.658448"
+  },
+  {
+    "supplier": "Quickmart Kenya",
+    "name": "Premium Basmati Rice 5kg",
+    "price": "KES 1863",
+    "scraped_at": "2025-04-29T01:46:44.658452"
+  },
+  {
+    "supplier": "Chandarana Foodplus",
+    "name": "Washing Powder 1kg",
+    "price": "KES 1983",
+    "scraped_at": "2025-04-29T01:46:44.658456"
+  },
+  {
+    "supplier": "Carrefour Kenya",
+    "name": "Premium Basmati Rice 5kg",
+    "price": "KES 313",
+    "scraped_at": "2025-04-29T01:46:44.658462"
+  },
+  {
+    "supplier": "Carrefour Kenya",
+    "name": "Sugar 1kg",
+    "price": "KES 1911",
+    "scraped_at": "2025-04-29T01:46:44.658466"
+  },
+  {
+    "supplier": "Carrefour Kenya",
+    "name": "Bottled Water 1.5L",
+    "price": "KES 1055",
+    "scraped_at": "2025-04-29T01:46:44.658472"
+  },
+  {
+    "supplier": "Naivas Kenya",
+    "name": "Minji (Green Peas) 1kg",
+    "price": "KES 322",
+    "scraped_at": "2025-04-29T01:46:44.658478"
+  },
+  {
+    "supplier": "Quickmart Kenya",
+    "name": "Peanut Butter 400g",
+    "price": "KES 635",
+    "scraped_at": "2025-04-29T01:46:44.658484"
+  },
+  {
+    "supplier": "Carrefour Kenya",
+    "name": "Hand Sanitizer 500ml",
+    "price": "KES 1144",
+    "scraped_at": "2025-04-29T01:46:44.658489"
+  },
+  {
+    "supplier": "Naivas Kenya",
+    "name": "Brown Bread 400g",
+    "price": "KES 320",
+    "scraped_at": "2025-04-29T01:46:44.658495"
+  },
+  {
+    "supplier": "Quickmart Kenya",
+    "name": "Maize Flour 2kg",
+    "price": "KES 233",
+    "scraped_at": "2025-04-29T01:46:44.658501"
+  },
+  {
+    "supplier": "Quickmart Kenya",
+    "name": "Apple (each)",
+    "price": "KES 593",
+    "scraped_at": "2025-04-29T01:46:44.659071"
+  },
+  {
+    "supplier": "Carrefour Kenya",
+    "name": "Salt 500g",
+    "price": "KES 1597",
+    "scraped_at": "2025-04-29T01:46:44.659081"
+  },
+  {
+    "supplier": "Quickmart Kenya",
+    "name": "Bottled Water 1.5L",
+    "price": "KES 1509",
+    "scraped_at": "2025-04-29T01:46:44.659085"
+  },
+  {
+    "supplier": "Chandarana Foodplus",
+    "name": "Spaghetti 500g",
+    "price": "KES 320",
+    "scraped_at": "2025-04-29T01:46:44.659089"
+  },
+  {
+    "supplier": "Quickmart Kenya",
+    "name": "Cooking Oil 2L",
+    "price": "KES 91",
+    "scraped_at": "2025-04-29T01:46:44.659092"
+  },
+  {
+    "supplier": "Naivas Kenya",
+    "name": "Sugar 1kg",
+    "price": "KES 461",
+    "scraped_at": "2025-04-29T01:46:44.659095"
+  },
+  {
+    "supplier": "Naivas Kenya",
+    "name": "Tomatoes 1kg",
+    "price": "KES 1321",
+    "scraped_at": "2025-04-29T01:46:44.659099"
+  },
+  {
+    "supplier": "Carrefour Kenya",
+    "name": "Bath Soap Bar",
+    "price": "KES 433",
+    "scraped_at": "2025-04-29T01:46:44.659102"
+  },
+  {
+    "supplier": "Naivas Kenya",
+    "name": "Tissue Rolls 10-Pack",
+    "price": "KES 1308",
+    "scraped_at": "2025-04-29T01:46:44.659106"
+  },
+  {
+    "supplier": "Chandarana Foodplus",
+    "name": "Cabbage 1 head",
+    "price": "KES 292",
+    "scraped_at": "2025-04-29T01:46:44.659112"
+  },
+  {
+    "supplier": "Chandarana Foodplus",
+    "name": "All-Purpose Flour 2kg",
+    "price": "KES 1466",
+    "scraped_at": "2025-04-29T01:46:44.659118"
+  },
+  {
+    "supplier": "Naivas Kenya",
+    "name": "Potatoes 2kg",
+    "price": "KES 1840",
+    "scraped_at": "2025-04-29T01:46:44.659125"
+  },
+  {
+    "supplier": "Naivas Kenya",
+    "name": "Minji (Green Peas) 1kg",
+    "price": "KES 64",
+    "scraped_at": "2025-04-29T01:46:44.659137"
+  },
+  {
+    "supplier": "Quickmart Kenya",
+    "name": "Premium Basmati Rice 5kg",
+    "price": "KES 937",
+    "scraped_at": "2025-04-29T01:46:44.659141"
+  },
+  {
+    "supplier": "Chandarana Foodplus",
+    "name": "Bath Soap Bar",
+    "price": "KES 1427",
+    "scraped_at": "2025-04-29T01:46:44.659144"
+  },
+  {
+    "supplier": "Naivas Kenya",
+    "name": "Hand Sanitizer 500ml",
+    "price": "KES 1009",
+    "scraped_at": "2025-04-29T01:46:44.659148"
+  },
+  {
+    "supplier": "Chandarana Foodplus",
+    "name": "Peanut Butter 400g",
+    "price": "KES 1339",
+    "scraped_at": "2025-04-29T01:46:44.659151"
+  },
+  {
+    "supplier": "Chandarana Foodplus",
+    "name": "Maize Flour 2kg",
+    "price": "KES 83",
+    "scraped_at": "2025-04-29T01:46:44.659155"
+  },
+  {
+    "supplier": "Naivas Kenya",
+    "name": "Washing Powder 1kg",
+    "price": "KES 1598",
+    "scraped_at": "2025-04-29T01:46:44.659158"
+  },
+  {
+    "supplier": "Carrefour Kenya",
+    "name": "Soda 500ml",
+    "price": "KES 1715",
+    "scraped_at": "2025-04-29T01:46:44.659162"
+  },
+  {
+    "supplier": "Quickmart Kenya",
+    "name": "Kenyan Tea 500g",
+    "price": "KES 1536",
+    "scraped_at": "2025-04-29T01:46:44.659165"
+  },
+  {
+    "supplier": "Chandarana Foodplus",
+    "name": "Fresh Milk 500ml",
+    "price": "KES 1162",
+    "scraped_at": "2025-04-29T01:46:44.659169"
+  },
+  {
+    "supplier": "Naivas Kenya",
+    "name": "Cabbage 1 head",
+    "price": "KES 379",
+    "scraped_at": "2025-04-29T01:46:44.659172"
+  },
+  {
+    "supplier": "Quickmart Kenya",
+    "name": "Cabbage 1 head",
+    "price": "KES 251",
+    "scraped_at": "2025-04-29T01:46:44.659176"
+  },
+  {
+    "supplier": "Quickmart Kenya",
+    "name": "All-Purpose Flour 2kg",
+    "price": "KES 628",
+    "scraped_at": "2025-04-29T01:46:44.659179"
+  },
+  {
+    "supplier": "Chandarana Foodplus",
+    "name": "Wheat Flour 2kg",
+    "price": "KES 83",
+    "scraped_at": "2025-04-29T01:46:44.659183"
+  },
+  {
+    "supplier": "Chandarana Foodplus",
+    "name": "Salt 500g",
+    "price": "KES 75",
+    "scraped_at": "2025-04-29T01:46:44.659186"
+  },
+  {
+    "supplier": "Naivas Kenya",
+    "name": "Sugar 1kg",
+    "price": "KES 1509",
+    "scraped_at": "2025-04-29T01:46:44.659190"
+  },
+  {
+    "supplier": "Chandarana Foodplus",
+    "name": "Brown Bread 400g",
+    "price": "KES 1882",
+    "scraped_at": "2025-04-29T01:46:44.659193"
+  },
+  {
+    "supplier": "Chandarana Foodplus",
+    "name": "Maize Flour 2kg",
+    "price": "KES 959",
+    "scraped_at": "2025-04-29T01:46:44.659196"
+  },
+  {
+    "supplier": "Naivas Kenya",
+    "name": "Fresh Milk 500ml",
+    "price": "KES 288",
+    "scraped_at": "2025-04-29T01:46:44.659200"
+  },
+  {
+    "supplier": "Naivas Kenya",
+    "name": "Wheat Flour 2kg",
+    "price": "KES 1680",
+    "scraped_at": "2025-04-29T01:46:44.659203"
+  },
+  {
+    "supplier": "Chandarana Foodplus",
+    "name": "Broccoli Bunch",
+    "price": "KES 787",
+    "scraped_at": "2025-04-29T01:46:44.659206"
+  },
+  {
+    "supplier": "Naivas Kenya",
+    "name": "Wheat Flour 2kg",
+    "price": "KES 1095",
+    "scraped_at": "2025-04-29T01:46:44.659209"
+  },
+  {
+    "supplier": "Quickmart Kenya",
+    "name": "Cabbage 1 head",
+    "price": "KES 767",
+    "scraped_at": "2025-04-29T01:46:44.659213"
+  },
+  {
+    "supplier": "Naivas Kenya",
+    "name": "Salt 500g",
+    "price": "KES 1985",
+    "scraped_at": "2025-04-29T01:46:44.659216"
+  },
+  {
+    "supplier": "Quickmart Kenya",
+    "name": "Apple (each)",
+    "price": "KES 739",
+    "scraped_at": "2025-04-29T01:46:44.659219"
+  },
+  {
+    "supplier": "Carrefour Kenya",
+    "name": "Kenyan Tea 500g",
+    "price": "KES 386",
+    "scraped_at": "2025-04-29T01:46:44.659223"
+  },
+  {
+    "supplier": "Naivas Kenya",
+    "name": "Salt 500g",
+    "price": "KES 752",
+    "scraped_at": "2025-04-29T01:46:44.659229"
+  },
+  {
+    "supplier": "Chandarana Foodplus",
+    "name": "Tomatoes 1kg",
+    "price": "KES 778",
+    "scraped_at": "2025-04-29T01:46:44.659234"
+  },
+  {
+    "supplier": "Naivas Kenya",
+    "name": "Cabbage 1 head",
+    "price": "KES 453",
+    "scraped_at": "2025-04-29T01:46:44.659240"
+  },
+  {
+    "supplier": "Naivas Kenya",
+    "name": "Tomatoes 1kg",
+    "price": "KES 1069",
+    "scraped_at": "2025-04-29T01:46:44.659248"
+  },
+  {
+    "supplier": "Quickmart Kenya",
+    "name": "Groundnuts 500g",
+    "price": "KES 1331",
+    "scraped_at": "2025-04-29T01:46:44.659254"
+  },
+  {
+    "supplier": "Quickmart Kenya",
+    "name": "Washing Powder 1kg",
+    "price": "KES 1708",
+    "scraped_at": "2025-04-29T01:46:44.659260"
+  },
+  {
+    "supplier": "Chandarana Foodplus",
+    "name": "Hand Sanitizer 500ml",
+    "price": "KES 914",
+    "scraped_at": "2025-04-29T01:46:44.659267"
+  },
+  {
+    "supplier": "Quickmart Kenya",
+    "name": "Peanut Butter 400g",
+    "price": "KES 229",
+    "scraped_at": "2025-04-29T01:46:44.659273"
+  },
+  {
+    "supplier": "Chandarana Foodplus",
+    "name": "Groundnuts 500g",
+    "price": "KES 1796",
+    "scraped_at": "2025-04-29T01:46:44.659279"
+  },
+  {
+    "supplier": "Chandarana Foodplus",
+    "name": "Tissue Rolls 10-Pack",
+    "price": "KES 1276",
+    "scraped_at": "2025-04-29T01:46:44.659284"
+  },
+  {
+    "supplier": "Quickmart Kenya",
+    "name": "Hand Sanitizer 500ml",
+    "price": "KES 1182",
+    "scraped_at": "2025-04-29T01:46:44.659294"
+  },
+  {
+    "supplier": "Naivas Kenya",
+    "name": "Peanut Butter 400g",
+    "price": "KES 1914",
+    "scraped_at": "2025-04-29T01:46:44.659298"
+  },
+  {
+    "supplier": "Naivas Kenya",
+    "name": "Minji (Green Peas) 1kg",
+    "price": "KES 1232",
+    "scraped_at": "2025-04-29T01:46:44.659302"
+  },
+  {
+    "supplier": "Carrefour Kenya",
+    "name": "Peanut Butter 400g",
+    "price": "KES 1698",
+    "scraped_at": "2025-04-29T01:46:44.659305"
+  },
+  {
+    "supplier": "Quickmart Kenya",
+    "name": "Toothpaste 150ml",
+    "price": "KES 367",
+    "scraped_at": "2025-04-29T01:46:44.659308"
+  },
+  {
+    "supplier": "Chandarana Foodplus",
+    "name": "Brown Bread 400g",
+    "price": "KES 1461",
+    "scraped_at": "2025-04-29T01:46:44.659311"
+  },
+  {
+    "supplier": "Quickmart Kenya",
+    "name": "Toothpaste 150ml",
+    "price": "KES 1837",
+    "scraped_at": "2025-04-29T01:46:44.659314"
+  },
+  {
+    "supplier": "Carrefour Kenya",
+    "name": "Peanut Butter 400g",
+    "price": "KES 1104",
+    "scraped_at": "2025-04-29T01:46:44.659318"
+  },
+  {
+    "supplier": "Chandarana Foodplus",
+    "name": "Bath Soap Bar",
+    "price": "KES 1239",
+    "scraped_at": "2025-04-29T01:46:44.659323"
+  },
+  {
+    "supplier": "Carrefour Kenya",
+    "name": "Potatoes 2kg",
+    "price": "KES 476",
+    "scraped_at": "2025-04-29T01:46:44.659329"
+  },
+  {
+    "supplier": "Carrefour Kenya",
+    "name": "Wheat Flour 2kg",
+    "price": "KES 274",
+    "scraped_at": "2025-04-29T01:46:44.659334"
+  },
+  {
+    "supplier": "Naivas Kenya",
+    "name": "Premium Basmati Rice 5kg",
+    "price": "KES 1662",
+    "scraped_at": "2025-04-29T01:46:44.659339"
+  },
+  {
+    "supplier": "Naivas Kenya",
+    "name": "Onions 1kg",
+    "price": "KES 1731",
+    "scraped_at": "2025-04-29T01:46:44.659345"
+  },
+  {
+    "supplier": "Carrefour Kenya",
+    "name": "Onions 1kg",
+    "price": "KES 1038",
+    "scraped_at": "2025-04-29T01:46:44.659356"
+  },
+  {
+    "supplier": "Carrefour Kenya",
+    "name": "Farm Fresh Eggs Tray",
+    "price": "KES 1199",
+    "scraped_at": "2025-04-29T01:46:44.659362"
+  },
+  {
+    "supplier": "Naivas Kenya",
+    "name": "All-Purpose Flour 2kg",
+    "price": "KES 423",
+    "scraped_at": "2025-04-29T01:46:44.659366"
+  },
+  {
+    "supplier": "Naivas Kenya",
+    "name": "Broccoli Bunch",
+    "price": "KES 1561",
+    "scraped_at": "2025-04-29T01:46:44.659372"
+  },
+  {
+    "supplier": "Quickmart Kenya",
+    "name": "Onions 1kg",
+    "price": "KES 1503",
+    "scraped_at": "2025-04-29T01:46:44.659382"
+  },
+  {
+    "supplier": "Chandarana Foodplus",
+    "name": "Fresh Milk 500ml",
+    "price": "KES 455",
+    "scraped_at": "2025-04-29T01:46:44.659388"
+  },
+  {
+    "supplier": "Naivas Kenya",
+    "name": "Wheat Flour 2kg",
+    "price": "KES 697",
+    "scraped_at": "2025-04-29T01:46:44.659400"
+  },
+  {
+    "supplier": "Chandarana Foodplus",
+    "name": "All-Purpose Flour 2kg",
+    "price": "KES 1854",
+    "scraped_at": "2025-04-29T01:46:44.659403"
+  },
+  {
+    "supplier": "Carrefour Kenya",
+    "name": "Wheat Flour 2kg",
+    "price": "KES 1473",
+    "scraped_at": "2025-04-29T01:46:44.659406"
+  },
+  {
+    "supplier": "Quickmart Kenya",
+    "name": "Cabbage 1 head",
+    "price": "KES 420",
+    "scraped_at": "2025-04-29T01:46:44.659410"
+  },
+  {
+    "supplier": "Naivas Kenya",
+    "name": "Tomatoes 1kg",
+    "price": "KES 473",
+    "scraped_at": "2025-04-29T01:46:44.659413"
+  },
+  {
+    "supplier": "Naivas Kenya",
+    "name": "Brown Bread 400g",
+    "price": "KES 143",
+    "scraped_at": "2025-04-29T01:46:44.659416"
+  },
+  {
+    "supplier": "Carrefour Kenya",
+    "name": "Apple (each)",
+    "price": "KES 1148",
+    "scraped_at": "2025-04-29T01:46:44.659422"
+  },
+  {
+    "supplier": "Quickmart Kenya",
+    "name": "Apple (each)",
+    "price": "KES 1540",
+    "scraped_at": "2025-04-29T01:46:44.659428"
+  },
+  {
+    "supplier": "Quickmart Kenya",
+    "name": "Sugar 1kg",
+    "price": "KES 511",
+    "scraped_at": "2025-04-29T01:46:44.659433"
+  },
+  {
+    "supplier": "Chandarana Foodplus",
+    "name": "Maize Flour 2kg",
+    "price": "KES 850",
+    "scraped_at": "2025-04-29T01:46:44.659438"
+  },
+  {
+    "supplier": "Naivas Kenya",
+    "name": "Tissue Rolls 10-Pack",
+    "price": "KES 477",
+    "scraped_at": "2025-04-29T01:46:44.659444"
+  },
+  {
+    "supplier": "Naivas Kenya",
+    "name": "Salt 500g",
+    "price": "KES 1537",
+    "scraped_at": "2025-04-29T01:46:44.659450"
+  },
+  {
+    "supplier": "Chandarana Foodplus",
+    "name": "Hand Sanitizer 500ml",
+    "price": "KES 1158",
+    "scraped_at": "2025-04-29T01:46:44.659457"
+  },
+  {
+    "supplier": "Carrefour Kenya",
+    "name": "Maize Flour 2kg",
+    "price": "KES 257",
+    "scraped_at": "2025-04-29T01:46:44.659464"
+  },
+  {
+    "supplier": "Carrefour Kenya",
+    "name": "Kenyan Tea 500g",
+    "price": "KES 1157",
+    "scraped_at": "2025-04-29T01:46:44.659470"
+  },
+  {
+    "supplier": "Chandarana Foodplus",
+    "name": "Premium Basmati Rice 5kg",
+    "price": "KES 1324",
+    "scraped_at": "2025-04-29T01:46:44.659475"
+  },
+  {
+    "supplier": "Quickmart Kenya",
+    "name": "Pineapple Whole",
+    "price": "KES 1150",
+    "scraped_at": "2025-04-29T01:46:44.659481"
+  },
+  {
+    "supplier": "Carrefour Kenya",
+    "name": "Broccoli Bunch",
+    "price": "KES 219",
+    "scraped_at": "2025-04-29T01:46:44.659487"
+  }
+]
